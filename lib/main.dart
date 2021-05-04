@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 
+import 'busline.dart';
+
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyApp(),
@@ -251,26 +253,4 @@ class _MyAppState extends State<MyApp> {
           _listTile('Настройки', Icon(Icons.settings)),
         ])));
   }
-}
-
-class BusLine {
-  String name;
-  String from;
-  String to;
-  DateTime fromDateTime;
-  DateTime toDateTime;
-  String seats;
-  String carNumber;
-  String icon;
-
-  BusLine({
-    this.name,
-    this.from,
-    this.to,
-    this.fromDateTime,
-    this.toDateTime,
-    this.seats,
-    this.carNumber,
-    this.icon,
-  });
 }
